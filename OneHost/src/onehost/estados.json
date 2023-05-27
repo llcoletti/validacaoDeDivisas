@@ -1,0 +1,139 @@
+{
+  "estados": [
+    {
+      "estado": "Acre",
+      "sigla": "AC",
+      "divisas": ["AM", "RO"]
+    },
+    {
+      "estado": "Alagoas",
+      "sigla": "AL",
+      "divisas": ["PE", "SE"]
+    },
+    {
+      "estado": "Amapá",
+      "sigla": "AP",
+      "divisas": ["PA"]
+    },
+    {
+      "estado": "Amazonas",
+      "sigla": "AM",
+      "divisas": ["AC", "RO", "RR", "PA", "MT", "TO"]
+    },
+    {
+      "estado": "Bahia",
+      "sigla": "BA",
+      "divisas": ["SE", "AL", "PE", "PI", "TO", "GO", "MG", "ES"]
+    },
+    {
+      "estado": "Ceará",
+      "sigla": "CE",
+      "divisas": ["RN", "PB", "PE", "PI"]
+    },
+    {
+      "estado": "Distrito Federal",
+      "sigla": "DF",
+      "divisas": ["GO"]
+    },
+    {
+      "estado": "Espírito Santo",
+      "sigla": "ES",
+      "divisas": ["BA", "MG", "RJ"]
+    },
+    {
+      "estado": "Goiás",
+      "sigla": "GO",
+      "divisas": ["TO", "BA", "MG", "MS", "MT", "DF"]
+    },
+    {
+      "estado": "Maranhão",
+      "sigla": "MA",
+      "divisas": ["PI", "TO", "PA"]
+    },
+    {
+      "estado": "Mato Grosso",
+      "sigla": "MT",
+      "divisas": ["AM", "PA", "GO", "MS", "RO", "TO"]
+    },
+    {
+      "estado": "Mato Grosso do Sul",
+      "sigla": "MS",
+      "divisas": ["MT", "GO", "MG", "SP", "PR"]
+    },
+    {
+      "estado": "Minas Gerais",
+      "sigla": "MG",
+      "divisas": ["BA", "ES", "RJ", "SP", "MS", "GO", "DF"]
+    },
+    {
+      "estado": "Pará",
+      "sigla": "PA",
+      "divisas": ["AM", "RR", "AP", "TO", "MA", "MT"]
+    },
+    {
+      "estado": "Paraíba",
+      "sigla": "PB",
+      "divisas": ["RN", "CE", "PE"]
+    },
+    {
+      "estado": "Paraná",
+      "sigla": "PR",
+      "divisas": ["SC", "SP", "MS"]
+    },
+    {
+      "estado": "Pernambuco",
+      "sigla": "PE",
+      "divisas": ["AL", "PB", "CE", "PI", "BA"]
+    },
+    {
+      "estado": "Piauí",
+      "sigla": "PI",
+      "divisas": ["MA", "BA", "PE", "CE", "TO"]
+    },
+    {
+      "estado": "Rio de Janeiro",
+      "sigla": "RJ",
+      "divisas": ["ES", "MG", "SP"]
+    },
+    {
+      "estado": "Rio Grande do Norte",
+      "sigla": "RN",
+      "divisas": ["PB", "CE"]
+    },
+    {
+      "estado": "Rio Grande do Sul",
+      "sigla": "RS",
+      "divisas": ["SC"]
+    },
+    {
+      "estado": "Rondônia",
+      "sigla": "RO",
+      "divisas": ["AC", "AM", "MT"]
+    },
+    {
+      "estado": "Roraima",
+      "sigla": "RR",
+      "divisas": ["AM", "PA"]
+    },
+    {
+      "estado": "Santa Catarina",
+      "sigla": "SC",
+      "divisas": ["RS", "PR"]
+    },
+    {
+      "estado": "São Paulo",
+      "sigla": "SP",
+      "divisas": ["RJ", "MG", "MS", "PR"]
+    },
+    {
+      "estado": "Sergipe",
+      "sigla": "SE",
+      "divisas": ["AL", "BA"]
+    },
+    {
+      "estado": "Tocantins",
+      "sigla": "TO",
+      "divisas": ["MA", "PI", "BA", "GO", "MT", "PA"]
+    }
+  ]
+}
