@@ -26,7 +26,7 @@ public class Divisas {
         return listaEstadosDivisas;
     }
     
-    public void setEstadosDivisasFromJsonPath(String path)
+    public boolean setEstadosDivisasFromJsonPath(String path)
     {
         JSONParser parser = new JSONParser();
         try {
@@ -43,7 +43,9 @@ public class Divisas {
             }
         } catch (IOException | ParseException e) {
             e.printStackTrace();
+            return false;
         }
+    return true;
     }
     
 }

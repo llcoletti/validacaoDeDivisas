@@ -17,25 +17,29 @@ public class Rota {
     ArrayList<String> rota;
     boolean rotaValida;
 
-    public boolean isRotaValida() {
+    public boolean getRotaValida() {
         return rotaValida;
     }
 
     public ArrayList<String> getRota() {
         return rota;
     }
-
-    public void setRota(ArrayList<String> rota) {
-        this.rota = rota;
-    }
     
-    public void setRota(String inputRota)
+    public boolean setRota(String inputRota)
     {
-        String[] inputArray  =  inputRota.toUpperCase().split(",");
-        for(int i = 0; i < inputArray.length; i++){
-            inputArray[i]  = inputArray[i].trim();
+        try{
+            String[] inputArray  =  inputRota.toUpperCase().split(",");
+            for(int i = 0; i < inputArray.length; i++){
+                inputArray[i]  = inputArray[i].trim();
+            }
+            this.rota = new ArrayList<String>(Arrays.asList(inputArray));
+            return true;
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+            return false;
         }
-        this.rota = new ArrayList<String>(Arrays.asList(inputArray));
+        
     }
     
     public boolean validarRota(Map<String, ArrayList<String>> estadosDivisas)

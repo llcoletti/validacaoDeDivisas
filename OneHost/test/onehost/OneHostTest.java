@@ -14,20 +14,20 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Lucas
  */
 public class OneHostTest {
-
-    @Test
-    public void testRefatorarInput() {
-        
-        OneHost teste = new OneHost();
-       
+    
+    public OneHostTest() {
+    }
+    
+    @BeforeEach
+    public void setUp() {
+    }
+    
+    @AfterEach
+    public void tearDown() {
     }
 
     @Test
-    public void testValidaRota() {
-    }
-
-    @Test
-    public void testPopularLista() {
+    public void testMain() {
     }
     
 }
