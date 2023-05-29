@@ -31,71 +31,16 @@ public class OneHost {
      */
     public static void main(String[] args) {
         
-        String jsonPath = "src/onehost/estados.json";        
-        Map<String, ArrayList<String>> estadosDivisas = new HashMap<>();
+        Divisas divisas = new Divisas();
+        Rota rota = new Rota();
         
-        estadosDivisas = popularLista(jsonPath);    
+        String input = "RS, SC, SP";
+        String jsonPath = "src/onehost/estados.json";
         
-        String inputRota = "AM, PA, MA, PI, CE";
+        divisas.setEstadosDivisasFromJsonPath(jsonPath);
+        rota.setRota(input);
         
-        ArrayList <String> rota = refatorarInput(inputRota);
+        System.out.println(rota.validarRota(divisas.getEstadosDivisas()));
         
-        System.out.println(validaRota(estadosDivisas, rota));
-        
-    }
-    public static Boolean validaRota(Map<String, ArrayList<String>> estadosDivisas, ArrayList<String> rota) {
-        
-        Boolean fazDivisa = false;
-        for(int i =0 ; i<rota.size() ; i++)
-        {
-            if(i+1 < rota.size())
-            {
-                String estado = rota.get(i);
-                ArrayList<String> divisas = estadosDivisas.get(estado);
-                
-                //Se for inserido um valor nao correspondente a sigla dos estados estados retorna false;
-                if(divisas == null)
-                {
-                       return false;         
-                }else
-                {
-                    fazDivisa = divisas.contains(rota.get(i+1));
-                }
-            }  
-        }
-        return fazDivisa;
-    }
-
-    public static Map<String, ArrayList<String>> popularLista(String path) {
-         Map<String, ArrayList<String>> listaEstadosDivisas = new HashMap<>();
-        JSONParser parser = new JSONParser();
-        try {
-            Object obj = parser.parse(new FileReader(path));
-
-            JSONObject jsonObject = (JSONObject) obj;
-            JSONArray estadosArray = (JSONArray) jsonObject.get("estados");
-
-            for (Object estadoObj : estadosArray) {
-                JSONObject estado = (JSONObject) estadoObj;
-                String siglaEstado = (String) estado.get("sigla");
-                JSONArray divisasArray = (JSONArray) estado.get("divisas");
-                listaEstadosDivisas.put(siglaEstado, divisasArray);
-            }
-
-        } catch (IOException | ParseException e) {
-            e.printStackTrace();
-        }
-        return listaEstadosDivisas;
-    }
-
-    public static ArrayList<String> refatorarInput(String inputRota) 
-    {
-        String[] inputArray  =  inputRota.toUpperCase().split(",");
-        for(int i = 0; i < inputArray.length; i++){
-            inputArray[i]  = inputArray[i].trim();
-        }
-        ArrayList <String> inputRefatorado = new ArrayList<String>(Arrays.asList(inputArray));
-        
-        return inputRefatorado;
     }
 }

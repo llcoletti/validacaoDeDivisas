@@ -14,24 +14,12 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Lucas
  */
 public class OneHostTest {
-    
-    public OneHostTest() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-
-    @Test
-    public void testMain() {
-    }
 
     @Test
     public void testRefatorarInput() {
+        
+        OneHost teste = new OneHost();
+       
     }
 
     @Test
